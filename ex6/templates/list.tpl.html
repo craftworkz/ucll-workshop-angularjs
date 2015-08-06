@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+	<div class="panel-heading">{{ listName }} <span class="badge pull-right">{{ list.length }}</span></div>
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="listItem in list" ng-click="alertFunction(listItem)">
+			{{ listItem }}
+
+			<button class="btn btn-xs btn-danger pull-right" ng-click="deleteFunction($index)" >
+				<span class="glyphicon glyphicon-trash"></span>
+		 	</button>
+		</li>
+	</ul>
+</div>
